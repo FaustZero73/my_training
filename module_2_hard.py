@@ -2,14 +2,14 @@ import random
 
 pole1 = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 pole2 = []
-n = ()
+n = (int(input("Введите число: ")))
 
 def passport():
     kode = random.choice(pole1)
     return kode
-kode = passport()
+    kode = passport()
 
-def pole2(n):
+def kode(n):
     sum_ = {}
     sum_.apdate({3: 12, 4: 13, 5: 1423, 6: 121524, 7: 162534, 8: 13172635, 9: 1218273645,
     10: 141923283746, 11: 11029384756, 12: 12131511124210394857, 13: 112211310495867,
