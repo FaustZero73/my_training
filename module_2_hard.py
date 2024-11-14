@@ -1,13 +1,6 @@
-import random
-
 pole1 = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 pole2 = []
 n = (int(input("Введите число: ")))
-
-def passport():
-    kode = random.choice(pole1)
-    return kode
-    kode = passport()
 
 def kode(n):
     sum_ = {}
@@ -20,7 +13,6 @@ def kode(n):
     kode2 = sum_.get(n)
     return kode2
 
-n = passport()
 print('Код 1: ', n)
 
 rang1 = list(range(1, n))
