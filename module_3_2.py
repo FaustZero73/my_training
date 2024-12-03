@@ -1,4 +1,4 @@
-def send_email(recipient: str, *, sender='university.help@gmail.com'):
+def send_email(message, recipient: str, *, sender='university.help@gmail.com'):
     if not all(['@' in recipient,'@' in sender, recipient.endswith('.ru') or
                 recipient.endswith('.com') or recipient.endswith('.net'), sender.endswith('.ru') or
                 sender.endswith('.com') or sender.endswith('.net')]):
@@ -11,8 +11,8 @@ def send_email(recipient: str, *, sender='university.help@gmail.com'):
         print("НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса", sender, "на адрес", recipient)
 
 
-send_email('vasyok1337@gmail.com')
-send_email('urban.fan@mail.ru', sender='urban.info@gmail.com')
-send_email('urban.student@mail.ru', sender='urban.teacher@mail.uk')
-send_email('urban.teacher@mail.ru', sender='urban.teacher@mail.ru')
+send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
+send_email('Вы видите это сообщение как лучший студент курса!', 'urban.fan@mail.ru', sender='urban.info@gmail.com')
+send_email('Пожалуйста, исправьте задание', 'urban.student@mail.ru', sender='urban.teacher@mail.uk')
+send_email('Напоминаю самому себе о вебинаре', 'urban.teacher@mail.ru', sender='urban.teacher@mail.ru')
 
